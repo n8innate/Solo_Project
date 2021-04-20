@@ -9,6 +9,7 @@ module.exports = {
     './client/index.js',
   ],
   output: {
+    // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js',
@@ -17,7 +18,7 @@ module.exports = {
   mode: 'development',
   module: {
     rules: [
-        { 
+        {
             test: /\.(js)$/, 
             use: 'babel-loader' 
         },
