@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 const webpack = require('webpack');
 const path = require('path');
@@ -20,7 +21,7 @@ module.exports = {
     port: 8080,
     proxy: {
       '/**': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:3001/',
         secure: false,
       },
     },
@@ -45,7 +46,6 @@ module.exports = {
           use: ['style-loader', 'css-loader'],
         },
         {
-          
         test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg|ico)$/,
         use: [
           {
@@ -57,7 +57,6 @@ module.exports = {
             },
           },
         ],
-      
         }
       ]
   },

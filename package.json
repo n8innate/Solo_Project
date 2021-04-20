@@ -10,7 +10,8 @@
     ]
   },
   "scripts": {
-    "start": "webpack serve --open",
+    "start": "nodemon ./server/server.js",
+    "dev": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "create": "webpack"
   },

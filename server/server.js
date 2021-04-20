@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 
 
-
+app.get('/hey', (req, res) => res.send('ho!'))
 
 
 
