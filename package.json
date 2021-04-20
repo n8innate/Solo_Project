@@ -1,4 +1,21 @@
 {
+  "name": "solo_project",
+  "description": "CodeSmith Solo Project",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n8innate/Solo_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n8innate/Solo_Project/issues"
+  },
+  "homepage": "https://github.com/n8innate/Solo_Project#readme",
   "dependencies": {
     "@babel/core": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
@@ -10,5 +27,9 @@
     "react-dom": "^17.0.2",
     "webpack": "^5.34.0",
     "webpack-cli": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2"
   }
 }
