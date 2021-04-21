@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
-function App() {
+const App = () => {
     return (
-        <div>Hello World!</div>
+        <div>
+           <h1> Hello World!</h1>
+        </div>
     );
-}
+};
+
 export default App;

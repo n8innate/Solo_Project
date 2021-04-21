@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const app = require('/server.js')
 
 const MONGO_URI = 'mongodb+srv://n8innate:codesmith@cluster0.n9knr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
@@ -10,7 +11,7 @@ mongoose.connect(MONGO_URI, {
 
   // sets the name of the DB that our collections are part of
 })
-  .then(() => console.log('Connected to Mongo DB.'))
+  .then(() => app.listen(3001, () => console.log('Connected to Mongo DB')))
   .catch(err => console.log(err));
 
 const Schema = mongoose.Schema;

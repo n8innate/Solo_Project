@@ -12,22 +12,17 @@ module.exports = {
   output: {
     // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 8080,
+    hot: true,
+    publicPath: '/dist',
     proxy: {
-      '/**': {
-        target: 'http://localhost:3001/',
-        secure: false,
-      },
+      '/': 'http://localhost:3001/',
+      '/hey': 'http://localhost:3001/',
     },
   },
-  devtool: 'eval-source-map',
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
         {
@@ -60,11 +55,6 @@ module.exports = {
         }
       ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-        template: './client/index.html'
-    })
-  ],
   resolve: {
     // Enable importing JS / JSX files without specifying their extension
     extensions: ['.js', '.jsx'],
