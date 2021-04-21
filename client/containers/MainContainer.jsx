@@ -24,4 +24,5 @@ class MainContainer extends Component {
 }
 
 
-module.exports = MainContainer;
+// module.exports = MainContainer;
+export default MainContainer;

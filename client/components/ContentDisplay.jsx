@@ -8,7 +8,7 @@ class ContentDisplay extends Component {
   constructor(props) {
     super(props);
   };
-
+  
   render(){
     return(
       <div>
@@ -21,4 +21,5 @@ class ContentDisplay extends Component {
 
 
 
-module.exports = ContentDisplay;
+// module.exports = ContentDisplay;
+export default ContentDisplay;

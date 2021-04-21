@@ -22,4 +22,5 @@ class SubjectsDisplay extends Component {
 
 
 
-module.exports = SubjectsDisplay;
+// module.exports = SubjectsDisplay;
+export default SubjectsDisplay;

@@ -52,4 +52,5 @@ class SubjectContainer extends Component {
   }
 }
 
-module.exports = SubjectContainer;
+// module.exports = SubjectContainer;
+export default SubjectContainer;

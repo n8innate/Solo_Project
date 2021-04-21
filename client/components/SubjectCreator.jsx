@@ -21,4 +21,5 @@ class SubjectCreator extends Component {
 
 
 
-module.exports = SubjectCreator;
+// module.exports = SubjectCreator;
+export default SubjectCreator;

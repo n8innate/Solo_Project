@@ -20,7 +20,7 @@ module.exports = {
     contentBase: './dist',
     publicPath: '/dist',
     proxy: {
-      '/hey': 'http://localhost:3001/',
+      '/api/**': 'http://localhost:3001/',
     },
   },
   mode: process.env.NODE_ENV,

@@ -21,4 +21,5 @@ class SubjectBubbles extends Component {
 
 
 
-module.exports = SubjectBubbles;
+// module.exports = SubjectBubbles;
+export default SubjectBubbles;

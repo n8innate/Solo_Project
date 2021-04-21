@@ -1,9 +1,10 @@
-const express = require('express');
-const app = express();
-const bodyParser = ('body-parser');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
+const express = require('express');
+
+const app = express();
+
+const apiRouter = require('./routes/api');
 
 const PORT = 3001;
 
@@ -22,30 +23,19 @@ app.use((req, res, next) => {
 });
 
 
-// const MONGO_URI = 'mongodb+srv://n8innate:codesmith@cluster0.n9knr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
-// mongoose.connect(MONGO_URI, {
-//   // options for the connect method to parse the URI
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   dbName: 'solo_project'
+app.use('/dist', express.static(path.join(__dirname, '../dist')));
 
-//   // sets the name of the DB that our collections are part of
-// })
-//   .then(() => app.listen(3001, () => console.log('Connected to Mongo DB')))
-//   .catch(err => console.log(err));
-
-
+app.use('/api', apiRouter);
 
 app.get('/', function (req, res) {
   res.status(200).sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+// app.get('/hey', (req, res) => res.send('ho!'))
 
-app.use('/dist', express.static(path.join(__dirname, '../dist')));
 
 
-app.get('/hey', (req, res) => res.send('ho!'))
 
 
 
