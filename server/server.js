@@ -42,6 +42,9 @@ app.get('/', function (req, res) {
 });
 
 
+app.use('/dist', express.static(path.join(__dirname, '../dist')));
+
+
 app.get('/hey', (req, res) => res.send('ho!'))
 
 
