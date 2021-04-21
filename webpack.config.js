@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const webpack = require('webpack');
+// const webpack = require('webpack');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
