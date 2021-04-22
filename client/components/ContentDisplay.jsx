@@ -11,7 +11,7 @@ class ContentDisplay extends Component {
   
   render(){
     return(
-      <div>
+      <div id='content-display'>
       </div>
     )
   }

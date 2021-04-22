@@ -8,7 +8,7 @@ class App extends Component {
     }
     render(){
         return (
-            <div id='main-container'>
+            <div id='app-div'>
                <MainContainer />
             </div>
         );

@@ -11,7 +11,10 @@ router.get('/devSubject',
 );
 
 
-
+router.post('/newSubject',
+  starWarsController.addCharacter,
+  (req, res) => res.status(200).json({})
+);
 
 
 

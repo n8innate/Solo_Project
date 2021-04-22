@@ -13,8 +13,8 @@ class MainContainer extends Component {
 
   render() {
     return (
-      <div className='subject-container'>
-        <h3>What kind of project would you like to build?</h3>
+      <div id='main-container'>
+        <h3>Before you get Kerri'd away...</h3>
         <SubjectsDisplay />
         <SubjectContainer />
       </div>

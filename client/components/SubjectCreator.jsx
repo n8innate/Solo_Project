@@ -11,7 +11,8 @@ class SubjectCreator extends Component {
 
   render(){
     return(
-      <div>
+      <div id='subject-creator'>
+        <h4>Start a new Subject?</h4>
       </div>
     )
   }

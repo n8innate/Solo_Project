@@ -12,7 +12,8 @@ class SubjectsDisplay extends Component {
 
   render(){
     return(
-      <div>
+      <div id='subject-display'>
+        <h1>Select Dev Subjects</h1>
         <SubjectBubbles />
       </div>
     )

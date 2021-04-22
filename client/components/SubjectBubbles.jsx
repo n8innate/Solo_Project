@@ -11,7 +11,7 @@ class SubjectBubbles extends Component {
 
   render(){
     return(
-      <div>
+      <div id='subject-bubbles'>
       </div>
     )
   }

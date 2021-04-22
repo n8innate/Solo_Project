@@ -45,8 +45,10 @@ class SubjectContainer extends Component {
     }
     //Return 
     return (
-      <div className='subject-container'>
+      <div id='subject-container'>
         {eachSubject}
+        <SubjectCreator />
+        <ContentDisplay />
       </div>
     )
   }
