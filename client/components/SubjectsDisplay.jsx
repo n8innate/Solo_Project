@@ -32,8 +32,8 @@ class SubjectsDisplay extends Component {
   render(){
     if (!this.state.fetchedSubj) return (
       <div>
-        <h4>Subject Starter Guide</h4>
-        <h6>Loading data, please wait...</h6>
+        <h3>Subject Starter Guide</h3>
+        <h3>Loading data, please wait...</h3>
       </div>
     );
     const { subjects } = this.state;
@@ -55,7 +55,7 @@ class SubjectsDisplay extends Component {
 
     return(
       <div id='subject-display'>
-        <h1>Select Dev Subjects</h1>
+        <h3>Select Dev Subjects</h3>
         <div className="subNameContainer">
         {subNames}
         </div>

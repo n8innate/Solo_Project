@@ -70,11 +70,12 @@ const SubjectCreator = props => {
     return(
       <section id='subject-creator'>
 
-        <h4>Start a new Subject?</h4>
+        <h3>Start a new Subject?</h3>
 
         {/* Subject Name Input  */}
         <div className="createSubjectField">
           <label htmlFor="name">Name: </label>
+          <br/>
           <input name="name" placeholder="React" value={name} onChange={nameOnChange} />
           {nameError ? (<span className="errorMsg">{nameError}</span>) : null}
         </div>
@@ -82,6 +83,7 @@ const SubjectCreator = props => {
         {/* Dev Type Input  */}
         <div className="createSubjectField">
           <label htmlFor="devType">Dev Type: </label>
+          <br/>
           <input name="devType" placeholder="Front-End/ Back-End" value={dev_type} onChange={devTypeOnChange} />
           {devTypeError ? (<span className="errorMsg">{devTypeError}</span>) : null}
         </div>
@@ -89,7 +91,8 @@ const SubjectCreator = props => {
         {/* Instructions Input  */}
         <div className="createSubjectField">
           <label htmlFor="instructions">Instructions: </label>
-          <textarea name="instructions" placeholder="First steps..." value={instructions} onChange={instructionsOnChange} />
+          <br/>
+          <textarea rows="4" cols="50" name="instructions" placeholder="First steps..." value={instructions} onChange={instructionsOnChange} />
           {instructionsError ? (<span className="errorMsg">{instructionsError}</span>) : null}
         </div>
 

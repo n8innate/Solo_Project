@@ -39,5 +39,21 @@ appController.postDevSubject = (req, res, next) => {
 };
 
 
+appController.postNextInstruction = (req, res, next) => {
+  models.DevSubject.findOneAndUpdate(
+    {
+      _id: req.body._id
+    }, 
+    {
+      $addToSet: { instructions: req.body.instructions }
+    }, 
+    (err, data) => {
+    console.log(data);
+    res.locals = data;
+    return next();
+  })
+};
+
+
 
 module.exports = appController;

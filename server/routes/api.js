@@ -22,5 +22,11 @@ router.post('/newSubject',
 );
 
 
+router.put('/nextInstruction',
+  appController.postNextInstruction,
+  (req, res) => res.status(200).json({})
+);
+
+
 
 module.exports = router;

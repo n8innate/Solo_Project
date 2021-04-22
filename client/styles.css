@@ -1,11 +1,14 @@
 
 body {
-  background-color: rgb(116, 116, 116);
+  background-color: black;
   /* margin: 1%; */
   /* padding: 1%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
   
 }
 
@@ -26,6 +29,7 @@ body {
 
 #main-container{
   background-color: rgb(96, 98, 112);
+  color: white;
   height: auto;
   width: 90%;
   margin: 1%;
@@ -39,14 +43,14 @@ body {
 
 
 #subject-display{
-  background-color: rgb(27, 42, 139);
+  background-color: rgb(61, 63, 71);
   /* min-height: 50vh; */
   height: auto;
-  width: 90%;
+  width: 99%;
   /* padding-top: 3%; */
   margin: 1%;
   padding: 1%;
-  border-radius: 2%;
+  /* border-radius: 2%; */
 
   display: grid;
   grid-template-areas: 
@@ -55,7 +59,8 @@ body {
 }
 
 #subject-bubbles{
-  background-color: rgb(139, 68, 27);
+  background-color: rgb(179, 177, 177);
+  color: white;
   /* min-height: 5vh; */
   /* height: auto; */
   width: 8em;
@@ -67,9 +72,10 @@ body {
 }
 
 #subject-container{
-  background-color: rgb(139, 27, 133);
+  background-color: rgb(61, 63, 71);
+  color: white;
   height: auto;
-  width: 90%;
+  width: 99%;
   margin: 1%;
   margin: 1%;
   padding: 1%;
@@ -81,20 +87,27 @@ body {
 }
 
 #subject-creator{
-  background-color: rgb(105, 34, 34);
+  background-color: rgb(88, 89, 97);
   height: auto;
-  width: 90%;
+  width: 99%;
   margin: 1%;
+  padding-right: 10000px;
   padding: 1%;
   border-radius: 2%;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-around;
+}
+
+#starter-guide-header{
+  color: white;
 }
 
 #content-display{
-  background-color: rgb(139, 68, 27);
+  background-color: rgb(88, 89, 97);
+  color: black;
   min-height: 50vh;
   height: auto;
   width: 100%;

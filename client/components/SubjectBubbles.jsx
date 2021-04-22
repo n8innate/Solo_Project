@@ -13,7 +13,7 @@ const SubjectBubbles = ({
   
   return(
     <div id='subject-bubbles'>
-      <h5 className="subName">{name}</h5>
+      <h3 className="subName">{name}</h3>
     </div>
   )
 

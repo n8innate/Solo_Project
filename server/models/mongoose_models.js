@@ -22,7 +22,7 @@ const Schema = mongoose.Schema;
 const devSubjectSchema = new Schema({
   name: String,
   dev_type: String,
-  instructions: String,
+  instructions: [String],
 });
 
 

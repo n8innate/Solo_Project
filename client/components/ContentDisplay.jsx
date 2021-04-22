@@ -30,8 +30,8 @@ class ContentDisplay extends Component {
   render(){
     if (!this.state.fetchedSubj) return (
       <div>
-        <h4>Subject Starter Guide</h4>
-        <h6>Loading data, please wait...</h6>
+        <h3>Subject Starter Guide</h3>
+        <h3>Loading data, please wait...</h3>
       </div>
     );
     const { subjects } = this.state;
@@ -49,10 +49,9 @@ class ContentDisplay extends Component {
       );
     });
 
-
     return(
       <div id='content-display'>
-        <h2>Subject Starter Guide</h2>
+        <h3 id='starter-guide-header'>Subject Starter Guide</h3>
         <div className="subContainer">
           {subElems}
         </div>
