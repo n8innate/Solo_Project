@@ -1,8 +1,8 @@
 
 body {
-  background-color: rgb(86, 108, 179);
-  margin: 1%;
-  padding: 1%;
+  background-color: rgb(116, 116, 116);
+  /* margin: 1%; */
+  /* padding: 1%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +10,14 @@ body {
 }
 
 #app-div{
-  background-color: darkcyan;
+  background-color: rgb(96, 98, 112);
   height: auto;
   width: 100%;
+  position: relative;
+  top: 0px;
   /* margin: 0% 13%; */
   /* padding: 15px; */
-  border-radius: 5%;
+  /* border-radius: 5%; */
 
   display: flex;
   flex-direction: column;
@@ -38,38 +40,40 @@ body {
 
 #subject-display{
   background-color: rgb(27, 42, 139);
-  height: 50vh;
+  /* min-height: 50vh; */
+  height: auto;
   width: 90%;
+  /* padding-top: 3%; */
   margin: 1%;
   padding: 1%;
-  border-radius: 10%;
+  border-radius: 2%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-areas: 
+  header header header
+  box box box;
 }
 
 #subject-bubbles{
   background-color: rgb(139, 68, 27);
-  height: 50%;
-  width: 99%;
+  /* min-height: 5vh; */
+  /* height: auto; */
+  width: 8em;
+  /* width: auto; */
   margin: 1%;
-  padding: 1%;
+  /* padding: 7% 20px; */
   border-radius: 10%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-area: box;
 }
 
 #subject-container{
   background-color: rgb(139, 27, 133);
-  height: 75%;
+  height: auto;
   width: 90%;
   margin: 1%;
-    margin: 1%;
+  margin: 1%;
   padding: 1%;
-  border-radius: 10%;
+  border-radius: 2%;
 
   display: flex;
   flex-direction: column;
@@ -78,24 +82,25 @@ body {
 
 #subject-creator{
   background-color: rgb(105, 34, 34);
-  height: 20vh;
-  width: 75%;
-    margin: 1%;
+  height: auto;
+  width: 90%;
+  margin: 1%;
   padding: 1%;
-  border-radius: 10%;
+  border-radius: 2%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #content-display{
   background-color: rgb(139, 68, 27);
+  min-height: 50vh;
   height: auto;
-  width: 75%;
-    margin: 1%;
+  width: 100%;
+  margin: 1%;
   padding: 1%;
-  border-radius: 10%;
+  border-radius: 2%;
 
   display: flex;
   flex-direction: column;

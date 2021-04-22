@@ -10,9 +10,14 @@ router.get('/devSubject',
   (req, res) => res.status(200).json(res.locals)
 );
 
+router.get('/subName',
+  appController.getDevName,
+  (req, res) => res.status(200).json(res.locals)
+);
+
 
 router.post('/newSubject',
-  starWarsController.addCharacter,
+  appController.postDevSubject,
   (req, res) => res.status(200).json({})
 );
 

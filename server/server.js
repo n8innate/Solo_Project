@@ -37,8 +37,6 @@ app.get('/', function (req, res) {
 
 
 
-
-
 app.use('*', (req, res, next) => {
   // res.set({ 'Content-Type': 'text/html; charset=utf-8' });
   res.status(404).sendFile(__dirname + '/client/404.html');

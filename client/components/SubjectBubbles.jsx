@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 //  >>> SHOULD FETCH & DISPLAY ALL AVAILABLE SUBJECTS  <<<
 //  >>> SHOULD ALLOW FOR THE CREATION OF A NEW SUBJECT  <<<
-class SubjectBubbles extends Component {
+const SubjectBubbles = ({
+  info
+}) => {
+  const {
+    name
+  } = info;
 
-  constructor(props) {
-    super(props);
-  };
+  
+  return(
+    <div id='subject-bubbles'>
+      <h5 className="subName">{name}</h5>
+    </div>
+  )
 
-  render(){
-    return(
-      <div id='subject-bubbles'>
-      </div>
-    )
-  }
+
 }
-
-
-
-
 
 // module.exports = SubjectBubbles;
 export default SubjectBubbles;
